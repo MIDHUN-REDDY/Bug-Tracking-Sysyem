@@ -1,0 +1,111 @@
+									MAIN MENU:
+
+********** PROJECT MANAGEMENT SYSTEM **********
+1. Admin Panel
+2. Manager Panel
+3. Employee Panel
+4. Exit
+Enter your choice: 1
+
+									AMNIN PANEL:
+
+********** ADMIN PANEL **********
+1. Add Manager
+2. Back to Main Menu
+Enter your choice: 1
+
+									ADD MANAGER:
+
+Enter Manager Code: 101
+Enter Manager Name: John Doe
+Enter Manager Email: john.doe@example.com
+Enter Manager Password: mypassword
+Enter Gender (M/F): M
+Enter Date of Birth (YYYY-MM-DD): 1985-08-10
+Enter Mobile Number: 9876543210
+Role set as Manager.
+Manager added successfully!
+
+									MANAGER PANEL:
+
+********** MANAGER PANEL **********
+1. Assign Task
+2. Add Project
+3. View Bug Reports
+4. Back to Main Menu
+Enter your choice: 2
+
+									ADD PROJECT:
+Enter Project ID: 501
+Enter Project Name: Project Alpha
+Enter Manager ID: 101
+Project added successfully!
+
+									ASSIGN TASK:
+********** MANAGER PANEL **********
+1. Assign Task
+2. Add Project
+3. View Bug Reports
+4. Back to Main Menu
+Enter your choice: 1
+
+Enter Task ID: 301
+Enter Project ID: 501
+Enter Employee Code: 201
+Enter Task Description: Complete the frontend module
+Enter Deadline (YYYY-MM-DD): 2024-09-15
+Enter Task Status: Pending
+Task assigned successfully!
+									EMPLOYEE PANEL:
+********** EMPLOYEE PANEL **********
+1. Report Bug
+2. View Tasks
+3. Back to Main Menu
+Enter your choice: 2
+
+Task ID: 301
+Project ID: 501
+Task Description: Complete the frontend module
+Deadline: 2024-09-15
+Status: Pending
+
+									REPORT BUG:
+********** EMPLOYEE PANEL **********
+1. Report Bug
+2. View Tasks
+3. Back to Main Menu
+Enter your choice: 1
+
+Enter Bug Number: 401
+Enter Project ID: 501
+Enter Employee Code: 201
+Enter Bug Description: UI not responsive on mobile devices
+Enter Bug Status: Open
+Bug reported successfully!
+
+									MANAGE PANEL -VIEW BUG REPORT:
+********** MANAGER PANEL **********
+1. Assign Task
+2. Add Project
+3. View Bug Reports
+4. Back to Main Menu
+Enter your choice: 3
+
+Bug ID: 401
+Project ID: 501
+Employee ID: 201
+Bug Description: UI not responsive on mobile devices
+Status: Open
+
+									EXITING THE SYSTEM:
+********** PROJECT MANAGEMENT SYSTEM **********
+1. Admin Panel
+2. Manager Panel
+3. Employee Panel
+4. Exit
+Enter your choice: 4
+
+Exiting the system. Goodbye!
+
+
+
