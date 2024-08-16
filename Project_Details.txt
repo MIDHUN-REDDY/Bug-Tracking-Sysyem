@@ -1,0 +1,113 @@
+1. Admin Module Features:
+
+The Admin Panel allows management of both managers and employees along with project and bug reports.
+
+Options:
+
+Manager Management:
+
+Add Manager Account
+View Manager Account
+Delete Manager Account
+Update Manager Details
+Employee Management:
+
+Add Employee Account
+View Employee Accounts
+Delete Employee Account
+Update Employee Details
+View All Projects
+
+View Bug Reports
+
+Exit
+
+2. Manager Module Features:
+The Manager Panel provides options for managing their profile, projects, and bugs.
+
+Options:
+
+Update Profile
+
+Manage Projects:
+
+Add Project
+View All Projects
+Delete Project
+Update Project
+Bug Management:
+
+Add New Bug
+View All Bugs
+Update Bug
+Delete Bug
+Exit
+
+3. Employee Module Features:
+Employees can update their profile, report bugs, update bug statuses, and view bug details.
+
+Options:
+
+Update Profile
+Add Bug Report (Tester Role Only)
+Update Bug Status
+View Bugs
+Bug Details
+Exit
+4. Database Schema (BDS):
+The schema involves four main tables:
+
+1. Employee Table:
+This table stores information about all employees.
+
+Column				Type			Description
+empCode				int			Primary Key. Used as a username for login.
+empName				varchar(30)		Name of the employee.
+empEmail			varchar(40)		Employee's email address.
+empPassword			varchar(20)		Employee's login password.
+gender				varchar(10)		Gender (M/F/Other).
+DOB				varchar(20)		Date of Birth.
+mobileNo			bigint			Mobile number.
+Role				varchar(20)		Role (Manager/Developer/Tester/Admin).
+
+2. Project Table:
+This table stores details about projects.
+
+Column				Type			Description
+projectID			int			Primary Key.
+projectName			varchar(30)		Name of the project.
+SDate				varchar(30)		Start date of the project.
+EDate				varchar(30)		End date of the project.
+projectDec			varchar(200)		Description of the project.
+
+3. BugReport Table:
+This table stores information about reported bugs.
+
+Column				Type			Description
+bugNo				int			Primary Key. Bug Number.
+bugCode				int			Foreign Key from BugType.
+projectID			int			Foreign Key from Project.
+TCode				int			Foreign Key from Employee (Tester Code).
+ECode				int			Foreign Key from Employee (Employee Code).
+status				varchar(20)		Bug status (pending/resolved).
+bugDes				varchar(100)		Bug description.
+
+4. BugType Table:
+This table categorizes bugs and their severity.
+
+Column				Type			Description
+bugCode				int			Primary Key.
+bugCategory			varchar(30)		Category of the bug.
+bugSeverity			varchar(20)		Severity of the bug (Critical, Major, Medium, Low).
+
+Bug Types and Categories:	
+Here are predefined bug categories:
+
+Functional Errors.
+Compilation Errors.
+Missing commands.
+Run time Errors.
+Communication problems.
+Logical errors.
+Inappropriate error handling.
+Calculation issues.
